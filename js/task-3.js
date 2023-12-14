@@ -1,7 +1,8 @@
 'use strict';
+
 function checkForSpam(message) {
-    let lowerCase = message.toLowerCase();
-    return lowerCase.includes("sale") || lowerCase.includes("spam");
+    let normalizedMessage = message.toLowerCase();
+    return normalizedMessage.includes("sale") || normalizedMessage.includes("spam");
 }
 
 console.log(checkForSpam("Latest technology news"));
